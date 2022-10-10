@@ -1,0 +1,86 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+mat-nav-list.list-horizontal {
+  padding: 0;
+  .mat-list-item {
+    display: inline-block;
+    height: auto;
+    width: auto;
+  }
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 50px !important;
+  background-color: black;
+}
+
+.mat-list-item .mat-list-item-content {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.color-menu {
+  color: orange !important;
+}
+.mat-menu-item {
+  color: rgb(255, 166, 0);
+  height: 40px !important;
+}
+.button {
+  margin-top: -10px;
+}
+
+.mat-badge-content {
+  background-color: black;
+  background: orange;
+}
+.user-info:hover {
+  background-color: #f2f2f2;
+}
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button {
+  color: white;
+  background: 0 0;
+}
+.user-info {
+  padding-left: 15px;
+  width: 50px;
+  .user-txt {
+    line-height: normal;
+  }
+}
+
+.username-txt {
+  font-size: 14px;
+}
+
+.user-profile-img-div {
+  background-color: transparent;
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+
+  mat-icon {
+    font-size: 32px;
+    color: orange;
+  }
+}
+.name {
+  color: black;
+  font-size: 9px;
+}
+
+mat-toolbar {
+  justify-content: space-between;
+}
+.notify {
+  width: 100px !important;
+  height: 50px !important;
+}

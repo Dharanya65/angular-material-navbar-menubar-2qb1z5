@@ -1,0 +1,462 @@
+<mat-toolbar>
+  <div>
+    <mat-nav-list class="list-horizontal">
+      <img class="logo" id="app-logo" src="assets/images/logo.png" alt="" />
+      <mat-list-item>
+        <button mat-menu-item [matMenuTriggerFor]="Filemenu" class="color-menu">
+          FILE
+        </button>
+      </mat-list-item>
+
+      <mat-menu #Filemenu="matMenu" [overlapTrigger]="false">
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="Createmenu">
+            <span>CREATE</span>
+          </button>
+        </mat-list-item>
+        <mat-menu #Createmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>SAFETY_OST_CRE</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY_OST_BOS</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG_PERMBR_LAW_92_PHL</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG_PERMBR_LAW_92</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG_CLIENT_LAW_92_PHL</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG_CLIENT_LAW_92</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG_PERMBR</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG_CLIENT</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY_OST_MGG</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY_NON_BBL</span>
+          </button>
+          <button mat-menu-item>
+            <span>GOOD</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item><span>OPEN</span></button>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="Accessmenu">
+            ACCESS_PARAM
+          </button>
+        </mat-list-item>
+        <mat-menu #Accessmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>CTX_AGENDA</span>
+          </button>
+          <button mat-menu-item>
+            <span>DOSSIER_MGG</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>CLOSE</span>
+        </button>
+        <button mat-menu-item>
+          <span>A___</span>
+        </button>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="Rapmenu">
+            RAPATRIATION
+          </button>
+        </mat-list-item>
+        <mat-menu #Rapmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>SAFETY_OST_CRE</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY_OST_BOS</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY_OST_MGG</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY</span>
+          </button>
+          <button mat-menu-item>
+            <span>SAFETY_NON_BBL</span>
+          </button>
+          <button mat-menu-item>
+            <span>SITUATION_REAL_ESTATE</span>
+          </button>
+          <button mat-menu-item>
+            <span>GOOD</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>REFRESH</span>
+        </button>
+        <button mat-menu-item>
+          <span>B___</span>
+        </button>
+        <button mat-menu-item>
+          <span>VALIDATION</span>
+        </button>
+        <button mat-menu-item>
+          <span>CENTRALISATION</span>
+        </button>
+        <button mat-menu-item>
+          <span>CENTRALISATION_DELETE</span>
+        </button>
+        <button mat-menu-item>
+          <span>C___</span>
+        </button>
+        <button mat-menu-item>
+          <span>PRINT_DIARY</span>
+        </button>
+        <button mat-menu-item>
+          <span>PRINT</span>
+        </button>
+        <button mat-menu-item>
+          <span>EXIT</span>
+        </button>
+      </mat-menu>
+
+      <mat-list-item>
+        <button
+          mat-menu-item
+          [matMenuTriggerFor]="claimsmenu"
+          class="color-menu"
+        >
+          EDIT
+        </button>
+      </mat-list-item>
+      <mat-menu #claimsmenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <span>CUT</span>
+        </button>
+        <button mat-menu-item>
+          <span>COPY</span>
+        </button>
+        <button mat-menu-item>
+          <span>PASTE</span>
+        </button>
+      </mat-menu>
+
+      <mat-list-item>
+        <button mat-menu-item [matMenuTriggerFor]="mcsMenu" class="color-menu">
+          CREDIT
+        </button>
+      </mat-list-item>
+      <mat-menu #mcsMenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <span>AR_225_GEN_DATA</span>
+        </button>
+        <button mat-menu-item>
+          <span>AR_225_LOAN</span>
+        </button>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="ARmenu">
+            AR_225_MGG_SYC
+          </button>
+        </mat-list-item>
+        <mat-menu #ARmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>JOINT_DEBTOR</span>
+          </button>
+          <button mat-menu-item>
+            <span>TWI_INSURANCE</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>AR_255_DECISION</span>
+        </button>
+        <button mat-menu-item>
+          <span>PH_LAW_CREDIT_DATA</span>
+        </button>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="PHmenu">
+            PH_LAW_MGG_SYC
+          </button>
+        </mat-list-item>
+        <mat-menu #PHmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>TWI_INSURANCE</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>PH_LAW_DECISION</span>
+        </button>
+        <button mat-menu-item>
+          <span>A____</span>
+        </button>
+        <button mat-menu-item>
+          <span>AR_225_DOCUMENT</span>
+        </button>
+        <button mat-menu-item>
+          <span>AR_225_CONV_OLD_NEW_LAW</span>
+        </button>
+        <button mat-menu-item>
+          <span>PH_LAW_DOCUMENT</span>
+        </button>
+        <button mat-menu-item>
+          <span>B_____</span>
+        </button>
+        <button mat-menu-item>
+          <span>CHG_CRD_APPLIANT</span>
+        </button>
+      </mat-menu>
+
+      <mat-list-item>
+        <button
+          mat-menu-item
+          [matMenuTriggerFor]="referralsmenu"
+          class="color-menu"
+        >
+          SAFETY
+        </button>
+      </mat-list-item>
+      <mat-menu #referralsmenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <span>CREATE</span>
+        </button>
+        <button mat-menu-item>
+          <span>MODIFICATION</span>
+        </button>
+        <button mat-menu-item>
+          <span>RADIATION</span>
+        </button>
+        <button mat-menu-item>
+          <span>A___</span>
+        </button>
+        <button mat-menu-item>
+          <span>MATURITY</span>
+        </button>
+      </mat-menu>
+
+      <mat-list-item>
+        <button mat-menu-item [matMenuTriggerFor]="Rmenu" class="color-menu">
+          RLE
+        </button>
+      </mat-list-item>
+      <mat-menu #Rmenu="matMenu" [overlapTrigger]="false">
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="RLECmenu">CREATE</button>
+        </mat-list-item>
+        <mat-menu #RLECmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>REAL_ESTATE</span>
+          </button>
+          <button mat-menu-item>
+            <span>BOAT</span>
+          </button>
+          <button mat-menu-item>
+            <span>FARMING</span>
+          </button>
+          <button mat-menu-item>
+            <span>GOODWILL</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>MODIFICATION </span>
+        </button>
+        <button mat-menu-item>
+          <span>FILL</span>
+        </button>
+        <button mat-menu-item>
+          <span>DELETE</span>
+        </button>
+      </mat-menu>
+
+      <mat-list-item>
+        <button mat-menu-item [matMenuTriggerFor]="Amenu" class="color-menu">
+          ACTION
+        </button>
+      </mat-list-item>
+      <mat-menu #Amenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <span>ADD</span>
+        </button>
+        <button mat-menu-item>
+          <span>DELETE</span>
+        </button>
+        <button mat-menu-item>
+          <span>ZOOM</span>
+        </button>
+        <button mat-menu-item>
+          <span>SEARCH</span>
+        </button>
+      </mat-menu>
+
+      <mat-list-item>
+        <button mat-menu-item [matMenuTriggerFor]="DRmenu" class="color-menu">
+          TOOLS
+        </button>
+      </mat-list-item>
+      <mat-menu #DRmenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <span>REPLACE_PROCEDURE</span>
+        </button>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="GGmenu">
+            GENERAL_TASK_GAR
+          </button>
+        </mat-list-item>
+        <mat-menu #GGmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>ANCIEN_SIGNAL_INT</span>
+          </button>
+        </mat-menu>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="GPmenu">
+            GENERAL_TASK_PHL
+          </button>
+        </mat-list-item>
+        <mat-menu #GPmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>PRINTING</span>
+          </button>
+          <button mat-menu-item>
+            <span>TARIFF</span>
+          </button>
+          <button mat-menu-item>
+            <span>CALENDAR</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>A____</span>
+        </button>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="SCmenu">
+            SIGNAL_CREDITAPPLIANT
+          </button>
+        </mat-list-item>
+        <mat-menu #SCmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>CONSULTATION</span>
+          </button>
+          <button mat-menu-item>
+            <span>RAPATRIATION</span>
+          </button>
+        </mat-menu>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="SCAmenu">
+            SITUATION_CREDITAPPLIANT
+          </button>
+        </mat-list-item>
+        <mat-menu #SCAmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>CONSULTATION</span>
+          </button>
+          <button mat-menu-item>
+            <span>RAPATRIATION</span>
+          </button>
+        </mat-menu>
+      </mat-menu>
+
+      <mat-list-item>
+        <button mat-menu-item [matMenuTriggerFor]="Chkmenu" class="color-menu">
+          CHK
+        </button>
+      </mat-list-item>
+      <mat-menu #Chkmenu="matMenu" [overlapTrigger]="false">
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="CHKGmenu">
+            CHK_GESTION
+          </button>
+        </mat-list-item>
+        <mat-menu #CHKGmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>AGENDA</span>
+          </button>
+          <button mat-menu-item>
+            <span>TEAM_MANAGEMENT</span>
+          </button>
+          <button mat-menu-item>
+            <span>LEAN</span>
+          </button>
+
+          <mat-list-item>
+            <button mat-menu-item [matMenuTriggerFor]="CHKamenu">
+              ADMINISTRATION
+            </button>
+          </mat-list-item>
+          <mat-menu #CHKamenu="matMenu" [overlapTrigger]="false">
+            <button mat-menu-item>
+              <span>SLA</span>
+            </button>
+            <button mat-menu-item>
+              <span>NORMTIME</span>
+            </button>
+            <button mat-menu-item>
+              <span>USERS</span>
+            </button>
+          </mat-menu>
+        </mat-menu>
+
+        <mat-list-item>
+          <button mat-menu-item [matMenuTriggerFor]="CHKPmenu">
+            CHK_PRODUCTION
+          </button>
+        </mat-list-item>
+        <mat-menu #CHKPmenu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <span>AGENDA</span>
+          </button>
+          <button mat-menu-item>
+            <span>INTRA DAY</span>
+          </button>
+          <button mat-menu-item>
+            <span>LEAN</span>
+          </button>
+        </mat-menu>
+
+        <button mat-menu-item>
+          <span>CHK_UTIL</span>
+        </button>
+      </mat-menu>
+      <mat-list-item>
+        <button
+          mat-menu-item
+          [matMenuTriggerFor]="searchmenu"
+          class="color-menu"
+        >
+          HELP
+        </button>
+      </mat-list-item>
+      <mat-menu #searchmenu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+          <span>ABOUT</span>
+        </button>
+      </mat-menu>
+    </mat-nav-list>
+  </div>
+  <div>
+    <button mat-button>
+      <mat-icon [matBadge]="4">notifications</mat-icon>
+    </button>
+    <button mat-button>John</button>
+    <button mat-icon-button class="user-profile-img-div">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
